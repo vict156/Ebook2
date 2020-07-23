@@ -1,24 +1,567 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b8Q-e0-vBP">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="YGU-5q-laE">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="l1M-II-yhm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6oD-p1-Gux">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="qZl-G5-PYX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="btA-Lh-WD1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="CHN-0V-DdB" kind="embed" id="RGg-Ma-zOf"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wpw-UB-QvV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pj0-Rh-uZO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIg-ob-Jls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="-567.1875"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="jWi-f0-8Rq">
+            <objects>
+                <tableViewController id="CHN-0V-DdB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vHg-A6-AUK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle=" 點擊食物了解更多" id="lKS-jg-2yB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="246" id="kbf-YO-35H">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="246"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kbf-YO-35H" id="Qzp-67-fkd">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="246"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="滷肉飯" translatesAutoresizingMaskIntoConstraints="NO" id="IoS-yg-rkK">
+                                                    <rect key="frame" x="11" y="11" width="360" height="183"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.5039597602739726" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="Rmg-aa-93h" kind="show" id="nLe-kg-nqP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="252" id="Orf-4x-yCe">
+                                        <rect key="frame" x="0.0" y="274" width="414" height="252"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Orf-4x-yCe" id="Og6-dj-CNa">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="252"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="牛肉麵" translatesAutoresizingMaskIntoConstraints="NO" id="HCW-b1-NAN">
+                                                    <rect key="frame" x="31" y="27" width="336" height="198"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="0ex-bE-8ah" kind="show" id="z9n-b4-QJj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="264" id="otZ-tz-eMc">
+                                        <rect key="frame" x="0.0" y="526" width="414" height="264"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="otZ-tz-eMc" id="M8g-qL-JiI">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="264"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蚵仔煎" translatesAutoresizingMaskIntoConstraints="NO" id="8jp-5p-li2">
+                                                    <rect key="frame" x="49" y="17" width="305" height="177"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="XIe-4I-18Y" kind="show" id="dsZ-PV-tXx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="CHN-0V-DdB" id="gWW-lX-xCY"/>
+                            <outlet property="delegate" destination="CHN-0V-DdB" id="TjO-UK-BgR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyq-fF-DyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730.434782608696" y="-567.85714285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CJD-tt-0pz">
+            <objects>
+                <viewController id="Rmg-aa-93h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2P-BZ-5YW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="bbV-QG-ffR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.50449486301369861" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5nX-aW-EIu">
+                                <rect key="frame" x="90" y="384" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">肉燥飯 英語：Lo bah png；台羅：Lóo-bah-pn̄g；白話字：Ló͘-bah-pn̄g）是源自臺灣的一道豬肉丁（或絞肉）飯菜餚，類似港式燒味。近年臺灣官方將滷肉飯英譯，改為臺灣話發音的直譯（如日本壽司、韓國泡菜英譯，以當地語言直譯，突顯專有特色。
+肉燥飯的特色和製作的關鍵部分在於肉醬和肉汁，在台南、台中、台北的製作方法和特點均有差異</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="滷肉飯" translatesAutoresizingMaskIntoConstraints="NO" id="57w-cC-eUh">
+                                <rect key="frame" x="64" y="176" width="286" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="超好吃" translatesAutoresizingMaskIntoConstraints="NO" id="IcY-qy-Soq">
+                                <rect key="frame" x="87" y="611" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="NDI-9N-Hol"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yg3-a6-C1q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwi-tF-QQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2658" y="-1166"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vec-Ou-ytW">
+            <objects>
+                <viewController id="0ex-bE-8ah" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BuT-Ff-MbV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="LB7-rH-6Ml">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.50449486300000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-LJ-y6e">
+                                <rect key="frame" x="90" y="384" width="240" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">牛肉麵 是泛指各種以燉煮過的牛肉為主要配料的湯麵食，其根源難以追溯，但與近代牛肉麵調理方式較為接近的麵食，清燉類的牛肉麵部分認為起源於蘭州牛肉麵，原本是陳維精所創。據學者說法，紅燒風味牛肉麵可能起源於台灣高雄市岡山區空軍眷村，以四川成都菜「小碗紅湯牛肉」改良而成[a]。現今牛肉麵已是華人的普遍食物，各地方的牛肉麵都有其特色。現在有不少泡麵都是以添加牛肉或牛肉口味而成牛肉麵，尤其是在台灣非常的普遍。</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="牛肉麵" translatesAutoresizingMaskIntoConstraints="NO" id="EJ8-LZ-SQm">
+                                <rect key="frame" x="64" y="176" width="286" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="超好吃" translatesAutoresizingMaskIntoConstraints="NO" id="ctC-RL-2Sy">
+                                <rect key="frame" x="76" y="659" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="knb-UT-xXG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mnA-d0-XwB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTK-CQ-vQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="-1149"/>
+        </scene>
+        <!--景點-->
+        <scene sceneID="Dhe-nw-ivn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uCD-QO-RwR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="景點" id="pE4-Sp-7kv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xac-Hi-srb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E75-IL-PNc" kind="relationship" relationship="rootViewController" id="alK-Y2-Pqs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXa-mk-f9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="120.53571428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uJR-fj-I5W">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="b8Q-e0-vBP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ZhM-0p-9ct"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fvQ-dC-Jed">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uCD-QO-RwR" kind="relationship" relationship="viewControllers" id="3ZX-3u-gmd"/>
+                        <segue destination="xno-cP-sia" kind="relationship" relationship="viewControllers" id="14i-2b-fbO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEC-YO-5ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+        <!--美食-->
+        <scene sceneID="dcA-eY-9er">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xno-cP-sia" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="美食" id="VFx-F0-dOp"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="q0W-Fo-lRx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QRv-FL-n1B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="l1M-II-yhm" kind="relationship" relationship="rootViewController" id="Xgo-v5-DyB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBT-bp-eqW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="-566"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hZN-dW-8jn">
+            <objects>
+                <viewController id="XIe-4I-18Y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dL7-gn-VMp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="ifH-VR-XqL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.50449486300000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-rh-bds">
+                                <rect key="frame" x="90" y="384" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">蚵仔煎 一道聞名閩、臺、潮的美味小吃，其來源眾說紛紜，最有名的傳奇是當年鄭成功攻臺之役時，荷蘭人將臺南附近所有的米糧全部藏起，以避免資助鄭成功。鄭軍為了節約白米，於是利用當時海灘找到的牡蠣裹以番薯粉煎炸，演變成為「蚵仔煎」 金門蚵仔煎還保留一開始混入番薯粉此種做法，與台式蚵仔煎不同的是，台式蚵仔煎是後面才淋上太白粉。</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蚵仔煎" translatesAutoresizingMaskIntoConstraints="NO" id="94c-rX-4Qw">
+                                <rect key="frame" x="64" y="176" width="286" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="超好吃" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-L6-Y6j">
+                                <rect key="frame" x="87" y="611" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O9K-f0-Oq1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h3N-xP-7ub"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5MM-FV-t6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3435" y="-566"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TZ9-CL-NKb">
+            <objects>
+                <viewController id="gbo-Be-oAP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vIm-xy-c32">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="aQy-yj-C0b">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.50449486300000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="陽明山國家公園 位在臺灣北端，成立於1985年，面積11,338公頃，全區向來以特有的火山地形地貌著稱，以大屯山火山群為主，園內火山口、硫磺噴氣口、地熱及溫泉等景觀齊備，是個火山地形保持十分完整的國家公園。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cT3-HD-c3n">
+                                <rect key="frame" x="90" y="384" width="240" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="花鐘" translatesAutoresizingMaskIntoConstraints="NO" id="jh9-r1-MHp">
+                                <rect key="frame" x="64" y="176" width="286" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="多人背包客" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-jI-XLd">
+                                <rect key="frame" x="87" y="611" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ls2-7q-kAT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SAa-XC-UCi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQ0-qW-8an" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418.840579710145" y="168.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gP9-w9-LPl">
+            <objects>
+                <viewController id="n7g-mW-Ad7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6M3-XB-9mq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-M6-mQT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.50449486300000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-TK-vbP">
+                                <rect key="frame" x="90" y="384" width="240" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">阿里山國家公園 位於臺灣嘉義縣東部，是由交通部觀光局規劃與管理的一座國家級風景特定區，設立於2001年。其範圍涵蓋了位於阿里山鄉、仍由林務局經營管理的阿里山國家森林遊樂區，並且擴大至附近的梅山鄉、竹崎鄉和番路鄉一帶的知名風景區
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="阿里山2" translatesAutoresizingMaskIntoConstraints="NO" id="ejJ-al-1oK">
+                                <rect key="frame" x="64" y="176" width="286" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背包客1" translatesAutoresizingMaskIntoConstraints="NO" id="XYf-AB-3F1">
+                                <rect key="frame" x="76" y="644" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aTV-0e-5bO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yqw-bG-uEN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jr0-Ir-NhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4098.5507246376819" y="168.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M7P-KH-xty">
+            <objects>
+                <viewController id="E75-IL-PNc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1n-hu-okG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="bx9-QV-DXQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-mW-JZc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="joi-83-pJT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="ZLm-Wy-2XE" kind="embed" id="3OM-FR-Qu4"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yTB-qI-mlK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eQx-T5-cSc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK2-UH-LF3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="120.53571428571428"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="96U-J7-OQo">
+            <objects>
+                <tableViewController id="ZLm-Wy-2XE" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="stm-17-a3V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="請點擊文字名稱" id="yse-kV-fPw">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="205" id="a7a-dn-Jjk">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="205"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a7a-dn-Jjk" id="Pn9-wY-Y5D">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="205"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陽明山" translatesAutoresizingMaskIntoConstraints="NO" id="U7S-qD-T3I">
+                                                    <rect key="frame" x="73" y="22" width="269" height="133"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR1-VP-zyH">
+                                                    <rect key="frame" x="147" y="158" width="120" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                                    <state key="normal" title="陽明山"/>
+                                                    <connections>
+                                                        <segue destination="gbo-Be-oAP" kind="show" id="D4y-nt-YkK"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="226" id="S7G-vm-3RW">
+                                        <rect key="frame" x="0.0" y="233" width="414" height="226"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S7G-vm-3RW" id="8C2-XX-Zno">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="阿里山" translatesAutoresizingMaskIntoConstraints="NO" id="Es1-NM-RU6">
+                                                    <rect key="frame" x="62" y="11" width="271" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfM-Kk-EWB">
+                                                    <rect key="frame" x="137" y="174" width="120" height="58"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <state key="normal" title="阿里山"/>
+                                                    <connections>
+                                                        <segue destination="n7g-mW-Ad7" kind="show" id="Y3g-Ol-DOK"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="321" id="DaH-Jp-Kqr">
+                                        <rect key="frame" x="0.0" y="459" width="414" height="321"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DaH-Jp-Kqr" id="4YY-ye-4tC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="321"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="台東" translatesAutoresizingMaskIntoConstraints="NO" id="kLt-FO-vPg">
+                                                    <rect key="frame" x="47" y="11" width="320" height="155"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-eA-Z6p">
+                                                    <rect key="frame" x="147" y="174" width="120" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <state key="normal" title="台東"/>
+                                                    <connections>
+                                                        <segue destination="n1M-Lj-HCT" kind="show" id="MLh-1X-fhj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ZLm-Wy-2XE" id="3iS-NO-Clt"/>
+                            <outlet property="delegate" destination="ZLm-Wy-2XE" id="z39-58-KZD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwI-8A-InI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708.6956521739135" y="119.86607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HPM-xb-I7u">
+            <objects>
+                <viewController id="n1M-Lj-HCT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="54h-DK-46z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan2" translatesAutoresizingMaskIntoConstraints="NO" id="gEE-dT-q4f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.50449486300000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GXP-04-SO8">
+                                <rect key="frame" x="90" y="384" width="240" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">臺東 有高山、有縱谷、有溪流、有海洋，來到臺東能夠徜徉在沒有邊界的自然教室，全然的放空，體驗這塊美麗的土地，享受自在愜意的慢活步調。 
+臺東，靠山面海，孕育了豐富的自然生態與物產。好山好水出好米，還有茶葉、金針花、釋迦與柴魚、旗魚等特產，純淨、天然、美味是臺東最純樸的驕傲。 
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="台東2" translatesAutoresizingMaskIntoConstraints="NO" id="jaz-Sl-xLf">
+                                <rect key="frame" x="64" y="176" width="286" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="巴士" translatesAutoresizingMaskIntoConstraints="NO" id="njF-4E-nKi">
+                                <rect key="frame" x="79" y="663" width="263" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zXI-wo-kFR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Erp-ur-5rX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTW-aV-aYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4760.8695652173919" y="168.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Taiwan2" width="540" height="720"/>
+        <image name="台東" width="900" height="600"/>
+        <image name="台東2" width="800" height="533"/>
+        <image name="多人背包客" width="231" height="218"/>
+        <image name="巴士" width="450" height="378"/>
+        <image name="滷肉飯" width="759" height="505"/>
+        <image name="牛肉麵" width="700" height="543"/>
+        <image name="背包客1" width="280" height="180"/>
+        <image name="花鐘" width="1024" height="683"/>
+        <image name="蚵仔煎" width="800" height="560"/>
+        <image name="超好吃" width="512" height="512"/>
+        <image name="阿里山" width="1200" height="630"/>
+        <image name="阿里山2" width="300" height="168"/>
+        <image name="陽明山" width="1170" height="702"/>
+    </resources>
 </document>
